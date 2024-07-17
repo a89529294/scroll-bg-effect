@@ -13,6 +13,28 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        "text-blur": "text-blur 1s linear 2s",
+        "bg-scroll": "bg-scroll 1s linear ",
+      },
+      keyframes: {
+        "text-blur": {
+          "0%": {
+            filter: "blur(8px)",
+          },
+          "100%": {
+            filter: "blur(0px)",
+          },
+        },
+        "bg-scroll": {
+          "0%": {
+            transform: "translateY(-40%)",
+          },
+          "100%": {
+            transform: "translateY(40px)",
+          },
+        },
+      },
     },
   },
   plugins: [],
